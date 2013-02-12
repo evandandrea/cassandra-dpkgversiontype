@@ -51,16 +51,6 @@ public class DpkgVersionType extends AbstractType<String>
         DpkgVersion a = new DpkgVersion(new String(o1.array()));
         DpkgVersion b = new DpkgVersion(new String(o2.array()));
         return a.compare(b);
-		//int end1 = o1.position() + o1.remaining();
-		//int end2 = o2.position() + o2.remaining();
-		//for (int i = o1.position(), j = o2.position();
-		//	 i < end1 && j < end2; i++, j++) {
-		//	int a = (o1.get(i) & 0xff);
-		//	int b = (o2.get(j) & 0xff);
-		//	if (a != b)
-		//		return a - b;
-		//}
-        //return o1.remaining() - o2.remaining();
     }
 
     public String compose(ByteBuffer bytes)
