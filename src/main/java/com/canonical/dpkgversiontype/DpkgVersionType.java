@@ -43,27 +43,24 @@ public class DpkgVersionType extends AbstractType<String>
     public int compare(ByteBuffer o1, ByteBuffer o2)
     {
 		if (o1.remaining() == 0) {
-			System.out.println("Nothing left in o1.");
 			return o2.remaining() == 0 ? 0 : -1;
 		}
 		if (o2.remaining() == 0) {
-			System.out.println("Nothing left in o2.");
 			return 1;
 		}
-		System.out.println(o1.position());
-		System.out.println(o2.position());
-		int end1 = o1.position() + o1.remaining();
-		int end2 = o2.position() + o2.remaining();
-		for (int i = o1.position(), j = o2.position();
-			 i < end1 && j < end2; i++, j++) {
-			int a = (o1.get(i) & 0xff);
-			int b = (o2.get(j) & 0xff);
-			System.out.println("A: " + a + " B: " + b);
-			if (a != b)
-				return a - b;
-		}
-		System.out.println("fell through");
-        return o1.remaining() - o2.remaining();
+        DpkgVersion a = new DpkgVersion(new String(o1.array()));
+        DpkgVersion b = new DpkgVersion(new String(o2.array()));
+        return a.compare(b);
+		//int end1 = o1.position() + o1.remaining();
+		//int end2 = o2.position() + o2.remaining();
+		//for (int i = o1.position(), j = o2.position();
+		//	 i < end1 && j < end2; i++, j++) {
+		//	int a = (o1.get(i) & 0xff);
+		//	int b = (o2.get(j) & 0xff);
+		//	if (a != b)
+		//		return a - b;
+		//}
+        //return o1.remaining() - o2.remaining();
     }
 
     public String compose(ByteBuffer bytes)

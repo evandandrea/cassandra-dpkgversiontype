@@ -135,7 +135,6 @@ public class DpkgVersion
         }
         if (c == '~')
         {
-            System.out.println("hi" + c);
             return -1;
         }
         if (c != 0)
