@@ -1,0 +1,5 @@
+cassandra-dpkgversiontype (1.2.1) precise; urgency=low
+
+  * Initial release.
+
+ -- Evan Dandrea <ev@ubuntu.com>  Wed, 27 Feb 2013 15:12:31 +0000

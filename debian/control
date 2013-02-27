@@ -1,0 +1,16 @@
+Source: cassandra-dpkgversiontype
+Section: java
+Priority: optional
+Maintainer: Evan Dandrea <ev@ubuntu.com>
+Build-Depends: debhelper (>= 7), cdbs, default-jdk, maven-debian-helper (>= 1.5)
+Build-Depends-Indep: junit4 
+Standards-Version: 3.9.2
+Homepage: https://github.com/evandandrea/cassandra-dpkgversiontype
+
+Package: libcassandra-dpkgversiontype-java
+Architecture: all
+Depends: ${misc:Depends}, ${maven:Depends}, cassandra
+Recommends: ${maven:OptionalDepends}
+Description: cassandra-dpkgversiontype
+ Dpkg binary version comparator for Cassandra.
+
