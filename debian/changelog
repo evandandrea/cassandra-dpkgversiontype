@@ -1,4 +1,4 @@
-cassandra-dpkgversiontype (1.2.1) precise; urgency=low
+cassandra-dpkgversiontype (1.2.2) precise; urgency=low
 
   * Initial release.
 
