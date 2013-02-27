@@ -9,7 +9,7 @@ Homepage: https://github.com/evandandrea/cassandra-dpkgversiontype
 
 Package: libcassandra-dpkgversiontype-java
 Architecture: all
-Depends: ${misc:Depends}, ${maven:Depends}, cassandra
+Depends: ${misc:Depends}, ${maven:Depends}, cassandra (>= 1.2.2)
 Recommends: ${maven:OptionalDepends}
 Description: cassandra-dpkgversiontype
  Dpkg binary version comparator for Cassandra.
