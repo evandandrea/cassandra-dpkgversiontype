@@ -1,3 +1,15 @@
+cassandra-dpkgversiontype (1.0.7~daisy-pluckers2) precise; urgency=low
+
+  * Correct cassandra dependency.
+
+ -- Evan Dandrea <ev@ubuntu.com>  Tue, 05 Mar 2013 22:12:07 +0000
+
+cassandra-dpkgversiontype (1.0.7~daisy-pluckers1) precise; urgency=low
+
+  * Build for 1.0.7.
+
+ -- Evan Dandrea <ev@ubuntu.com>  Tue, 05 Mar 2013 17:55:54 +0000
+
 cassandra-dpkgversiontype (1.2.2) precise; urgency=low
 
   * Initial release.

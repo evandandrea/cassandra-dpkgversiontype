@@ -18,9 +18,12 @@
 package com.canonical.dpkgversiontype;
 import org.apache.cassandra.db.marshal.*;
 
+import com.google.common.base.Charsets;
+
 import java.nio.ByteBuffer;
 
 import org.apache.cassandra.cql.jdbc.JdbcAscii;
+import org.apache.cassandra.utils.ByteBufferUtil;
 
 public class DpkgVersionType extends AbstractType<String>
 {
@@ -60,7 +63,7 @@ public class DpkgVersionType extends AbstractType<String>
 
     public ByteBuffer decompose(String value)
     {
-        return JdbcAscii.instance.decompose(value);
+        return ByteBufferUtil.bytes(value, Charsets.US_ASCII);
     }
 
     public ByteBuffer fromString(String source)
