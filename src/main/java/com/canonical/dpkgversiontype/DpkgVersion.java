@@ -67,6 +67,11 @@ public class DpkgVersion
         int j = 0;
         int first_diff = 0;
 
+        if (lhs == null)
+            return -1;
+        if (rhs == null)
+            return 1;
+
         while (i < lhs.length() || j < rhs.length())
         {
             while ((i < lhs.length() && !cisdigit(lhs.charAt(i))) ||
