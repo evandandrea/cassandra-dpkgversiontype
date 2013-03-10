@@ -1,3 +1,9 @@
+cassandra-dpkgversiontype (1.0.7~daisy-pluckers4) precise; urgency=low
+
+  * Handle both sides of verrevcmp being null.
+
+ -- Evan Dandrea <ev@ubuntu.com>  Sun, 10 Mar 2013 12:57:03 +0000
+
 cassandra-dpkgversiontype (1.0.7~daisy-pluckers3) precise; urgency=low
 
   * Catch null pointers in verrevcmp.
