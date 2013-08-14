@@ -1,3 +1,9 @@
+cassandra-dpkgversiontype (1.2.8~daisy-pluckers1) precise; urgency=low
+
+  * Build for cassandra 1.2.8.
+
+ -- Evan Dandrea <ev@ubuntu.com>  Wed, 14 Aug 2013 15:47:23 +0100
+
 cassandra-dpkgversiontype (1.2.5~daisy-pluckers1) precise; urgency=low
 
   * Build for Cassandra 1.2

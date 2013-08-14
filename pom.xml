@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.canonical</groupId>
 	<artifactId>cassandra-dpkgversiontype</artifactId>
-	<version>1.2.5</version>
+	<version>1.2.8</version>
 	<packaging>jar</packaging>
 	
 	<name>cassandra-dpkgversiontype</name>
@@ -12,8 +12,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<debian.hasPackageVersion>
 		</debian.hasPackageVersion>
-		<debian.mavenRules>com.canonical cassandra-dpkgversiontype jar 1.2.5 * *</debian.mavenRules>
-		<debian.originalVersion>1.2.5</debian.originalVersion>
+		<debian.mavenRules>com.canonical cassandra-dpkgversiontype jar 1.2.8 * *</debian.mavenRules>
+		<debian.originalVersion>1.2.8</debian.originalVersion>
 		<debian.package>libcassandra-dpkgversiontype-java</debian.package>
 	</properties>
 	<build>
@@ -32,9 +32,9 @@
 		<dependency>
 			<groupId>org.apache.cassandra</groupId>
 			<artifactId>apache-cassandra</artifactId>
-			<version>1.2.5</version>
+			<version>1.2.8</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/lib/apache-cassandra-1.2.5.jar</systemPath>
+			<systemPath>${project.basedir}/lib/apache-cassandra-1.2.8.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>com.google.guava</groupId>
